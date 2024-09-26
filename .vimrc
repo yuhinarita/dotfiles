@@ -61,6 +61,8 @@ vnoremap ; :
 
 inoremap jk <Esc>
 inoremap kj <Esc>
+vnoremap jk <Esc>
+vnoremap kj <Esc>
 
 map gj j
 map gk k
