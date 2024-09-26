@@ -12,6 +12,9 @@ Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
+Plug 'scrooloose/nerdcommenter'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -23,15 +26,15 @@ set number
 set showmatch
 set laststatus=2
 set linebreak
-set wrap
+set nowrap
 set ruler
 set cursorline
 set cursorcolumn
 
 " Editing
 set virtualedit=onemore
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set expandtab
 set autoindent
 set smartindent
@@ -50,11 +53,13 @@ set nowritebackup
 set noswapfile
 
 " Key mappings
+let mapleader = ','
+
 nnoremap ; :
 vnoremap ; :
 
 inoremap jk <Esc>
 inoremap kj <Esc>
 
-noremap gj j
-noremap gk k
+map gj j
+map gk k
