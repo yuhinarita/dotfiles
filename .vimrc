@@ -5,16 +5,17 @@ filetype plugin indent on
 " vim-plug
 call plug#begin()
 
-" List of plug-ins
+" List of plugins
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
-Plug 'preservim/nerdtree'
+Plug 'lambdalisue/fern.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'scrooloose/nerdcommenter'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
