@@ -11,9 +11,9 @@ Plug 'joshdick/onedark.vim'
 Plug 'lambdalisue/fern.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'w0rp/ale'
+Plug 'w0rp/ale' 
 Plug 'scrooloose/nerdcommenter'
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
 
@@ -39,6 +39,7 @@ set tabstop=4
 set expandtab
 set autoindent
 set smartindent
+set timeoutlen=200
 
 " Search
 set ignorecase
@@ -51,7 +52,7 @@ set wrapscan
 " Backup
 set nobackup
 set nowritebackup
-set noswapfile
+set noswapfile  
 
 " Key mappings
 let mapleader = ','
@@ -66,3 +67,9 @@ vnoremap kj <Esc>
 
 map gj j
 map gk k
+
+" ALE Configs"
+let g:ale_completion_enabled = 1
+let g:ale_sign_column_always = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_set_quickfix = 1
