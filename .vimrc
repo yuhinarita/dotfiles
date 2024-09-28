@@ -4,6 +4,22 @@
 " ||                                            ||
 " ================================================
 
+" Vim-plug
+" ------------------------------------------------
+call plug#begin()
+Plug 'itchyny/lightline.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
+Plug 'lambdalisue/fern.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'w0rp/ale' 
+Plug 'tpope/vim-commentary'
+Plug 'mhinz/vim-signify'
+Plug 'sheerun/vim-polyglot'
+call plug#end()
+
+
 " Miscellaneous
 " ------------------------------------------------
 set fenc=utf-8
@@ -108,22 +124,6 @@ vnoremap > >gv
 " ||   Plug-ins                                 ||
 " ||                                            ||
 " ================================================
-
-" Vim-plug
-" ------------------------------------------------
-call plug#begin()
-Plug 'itchyny/lightline.vim'
-Plug 'joshdick/onedark.vim'
-Plug 'morhetz/gruvbox'
-Plug 'lambdalisue/fern.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'w0rp/ale' 
-Plug 'tpope/vim-commentary'
-Plug 'mhinz/vim-signify'
-Plug 'sheerun/vim-polyglot'
-call plug#end()
-
 
 " Gruvbox 
 " ------------------------------------------------
