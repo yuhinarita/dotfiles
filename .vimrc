@@ -50,7 +50,7 @@ set autoindent
 set smartindent
 " set timeoutlen=500
 set foldmethod=manual
-
+set mouse=a
 
 " Search
 " ------------------------------------------------
@@ -79,7 +79,6 @@ set hidden
 
 " Miscellaneous
 " ------------------------------------------------
-" Sneak-peak 5 lines at a time
 let mapleader = ','
 
 " " Map escape key to jk 
