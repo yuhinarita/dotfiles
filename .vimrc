@@ -8,7 +8,6 @@
 " ------------------------------------------------
 call plug#begin()
 Plug 'itchyny/lightline.vim'
-Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
 Plug 'lambdalisue/fern.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -26,7 +25,8 @@ set fenc=utf-8
 filetype plugin indent on
 syntax on
 colorscheme gruvbox
-
+" set t_Co=256
+set termguicolors
 
 " Visual aid
 " ------------------------------------------------
