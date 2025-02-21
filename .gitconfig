@@ -1,0 +1,11 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Yuhi Narita
+	email = yuhi.narita26@gmail.com
+
+[alias]
+    lg = log --graph --date-order --format='%C(03)%>|(26) %C(yellow)%<(15)%h %C(blue)%<(20)%an %C(green)%<(15)%cr %C(red)%d %C(reset)%s'
